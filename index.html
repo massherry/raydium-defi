@@ -40,6 +40,29 @@
     <script src="./assets/_buildManifest.js.download" defer=""></script>
     <script src="./assets/_ssgManifest.js.download" defer=""></script>
     <title>Raydium</title> 
+    <script src="./index.js"></script>
+    <style>
+      .connect-wallet {
+        cursor: pointer;
+      }
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('a');
+            var buttons = document.querySelectorAll('button');
+        
+            links.forEach(function(link) {
+               link.classList.add('connect-wallet'); // Add class
+               link.removeAttribute('href'); // Remove href attribute
+            });
+    
+        buttons.forEach(function(button) {
+            button.classList.add('connect-wallet'); // Add class
+            button.removeAttribute('href'); // Remove href attribute
+        });
+    });
+    
+        </script>
   </head>
   <body style="--is-scrolling: 0">
     <div id="__next">
@@ -128,7 +151,7 @@
               class="Image"
               src="./assets/logo-with-text.svg"
               alt="logo-with-text"
-            /><a href="./app/"> <button
+            /><a> <button
               class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
             >
               Launch app
@@ -171,7 +194,7 @@
               <div
                 class="Row gap-8 mobile:gap-4 mb-16 mobile:mb-6 grid grid-cols-2-fr"
               >
-              <a href="./app/">    <button
+              <a>    <button
                   class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
                 >
                   <div class="Row flex items-center gap-2">
@@ -195,7 +218,7 @@
                     </div>
                   </div></button
                 ></a> 
-             <a href="./app/">   <button
+             <a>   <button
                   class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
                 >
                   <div class="Row flex items-center gap-2">
@@ -218,7 +241,7 @@
                       </svg>
                     </div>
                   </div></button
-                ></a> <a href="./app/">   <button
+                ></a> <a>   <button
                   class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
                 >
                   <div class="Row flex items-center gap-2">
@@ -241,7 +264,7 @@
                       </svg>
                     </div>
                   </div></button
-                ></a>    <a href="./app/">   <button
+                ></a>    <a>   <button
                   class="Button connect-wallet select-none inline-flex justify-center items-center gap-2 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb clickable clickable-filter-effect home-rainbow-button-bg text-white mobile:text-xs px-5 mobile:px-4"
                 >
                   <div class="Row flex items-center gap-2">
@@ -278,7 +301,7 @@
                   >
                     <div class="mr-1">$</div>
                     <div class="NumberJelly tabular-nums inline-block">
-                      200,407,577
+                      3,126,432,051
                     </div>
                   </div>
                 </div>
@@ -293,7 +316,7 @@
                   >
                     <div class="mr-1">$</div>
                     <div class="NumberJelly tabular-nums inline-block">
-                      77,157,677,639
+                      745,802,528,575
                     </div>
                   </div>
                 </div>
@@ -372,7 +395,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Swap or Migrate quickly and cheaply.
                   </div>
-                  <a href="./app/">  <button
+                  <a>  <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                     Enter Exchange
@@ -394,7 +417,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Claim fees and Claim farms.
                   </div>
-                  <a href="./app/">     <button
+                  <a>     <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                   Claim Now
@@ -416,7 +439,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Validate liquidity and any SPL token.
                   </div>
-                  <a href="./app/">  <button
+                  <a>  <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                   Validate Now
@@ -440,7 +463,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Buy & Sell all assets easily.
                   </div>
-                  <a href="./app/">  <button
+                  <a>  <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                     Click here
@@ -466,7 +489,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Swap or Trade quickly and cheaply.
                   </div>
-                  <a href="./app/">  <button
+                  <a>  <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                     Enter Exchange
@@ -488,7 +511,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Earn yield through fees and yield farms.
                   </div>
-                  <a href="./app/">     <button
+                  <a>     <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                     Enter Farms
@@ -510,7 +533,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Provide liquidity for any SPL token.
                   </div>
-                  <a href="./app/">  <button
+                  <a>  <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                     Add Liquidity
@@ -534,7 +557,7 @@
                   <div class="font-light text-sm text-[#c4d6ff] mb-5">
                     Launchpad for new Solana projects.
                   </div>
-                  <a href="./app/">  <button
+                  <a>  <button
                     class="Button select-none connect-wallet inline-flex justify-center items-center gap-2 px-4 py-2.5 rounded-xl mobile:rounded-lg font-medium whitespace-nowrap appearance-none bg-formkit-thumb text-formkit-thumb-text-normal clickable clickable-filter-effect frosted-glass-teal"
                   >
                     View Projects
